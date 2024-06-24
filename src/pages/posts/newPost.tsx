@@ -1,7 +1,7 @@
-import React from 'react'
+import PostForm from '@components/posts/PostForm'
 
-const newPost = () => {
-  return <div>newPost</div>
+const NewPost = () => {
+  return <PostForm />
 }
 
-export default newPost
+export default NewPost

@@ -15,7 +15,7 @@ const Input = styled.input`
     font-size: 12px;
   }
   &:focus {
-    border-color: ${colors.blue};
+    border-color: ${colors.green};
     outline: none;
   }
   &[aria-invalid='true'] {

@@ -1,10 +1,11 @@
-import { PostProps } from '@components/models/post'
+import { PostProps } from '@models/post'
 import PostBox from '@components/posts/PostBox'
 import PostForm from '@components/posts/PostForm'
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { colors } from '@styles/colorPalette'
 import { useState } from 'react'
+import NewPost from './posts/newPost'
 
 const posts: PostProps[] = [
   {
@@ -47,26 +48,28 @@ const Home = () => {
   const [isActive, setIsActive] = useState<boolean>(false)
   return (
     <HomeContainer>
-      <HomeTitle>DROP</HomeTitle>
-      <HomeTabs>
-        <div
-          css={isActive ? null : ActiveStyle}
-          onClick={() => {
-            setIsActive(false)
-          }}
-        >
-          For You
-        </div>
-        <div
-          css={isActive ? ActiveStyle : null}
-          onClick={() => {
-            setIsActive(true)
-          }}
-        >
-          Following
-        </div>
-      </HomeTabs>
-      <PostForm />
+      <HomeFixedStyle>
+        <HomeTitle>DROP</HomeTitle>
+        <HomeTabs>
+          <div
+            css={isActive ? null : ActiveStyle}
+            onClick={() => {
+              setIsActive(false)
+            }}
+          >
+            For You
+          </div>
+          <div
+            css={isActive ? ActiveStyle : null}
+            onClick={() => {
+              setIsActive(true)
+            }}
+          >
+            Following
+          </div>
+        </HomeTabs>
+      </HomeFixedStyle>
+      <NewPost />
       {posts?.map((post) => <PostBox key={post.id} post={post} />)}
     </HomeContainer>
   )
@@ -83,6 +86,15 @@ const HomeTitle = styled.div`
   font-style: italic;
   color: ${colors.green};
 `
+
+const HomeFixedStyle = styled.div`
+  width: 100%;
+  position: sticky;
+  max-width: 600px;
+  margin: 0 auto;
+  top: 0;
+  background-color: ${colors.white};
+`
 const HomeTabs = styled.div`
   width: 100%;
   display: grid;
@@ -93,7 +105,7 @@ const HomeTabs = styled.div`
     font-weight: 600;
     padding: 16px;
     cursor: pointer;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 `
 

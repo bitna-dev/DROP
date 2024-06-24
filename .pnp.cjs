@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:16.18.101"],\
           ["@types/react", "npm:18.3.3"],\
           ["@types/react-dom", "npm:18.3.0"],\
+          ["@types/validator", "npm:13.12.0"],\
           ["craco-alias", "npm:3.0.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:9.1.0"],\
@@ -49,11 +50,13 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.3.2"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:18.3.1"],\
-          ["react-hook-form", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:7.52.0"],\
           ["react-icons", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:5.2.1"],\
           ["react-router-dom", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:6.23.1"],\
           ["react-scripts", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:5.0.1"],\
+          ["react-spinners", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:0.13.8"],\
+          ["react-toastify", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:10.0.5"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
+          ["validator", "npm:13.12.0"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
@@ -6632,6 +6635,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/validator", [\
+      ["npm:13.12.0", {\
+        "packageLocation": "./.yarn/cache/@types-validator-npm-13.12.0-2a1ff2d50d-a539f06c84.zip/node_modules/@types/validator/",\
+        "packageDependencies": [\
+          ["@types/validator", "npm:13.12.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/ws", [\
       ["npm:8.5.10", {\
         "packageLocation": "./.yarn/cache/@types-ws-npm-8.5.10-a877a38f71-e9af279b98.zip/node_modules/@types/ws/",\
@@ -8559,6 +8571,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["clsx", [\
+      ["npm:2.1.1", {\
+        "packageLocation": "./.yarn/cache/clsx-npm-2.1.1-96125b98be-c4c8eb865f.zip/node_modules/clsx/",\
+        "packageDependencies": [\
+          ["clsx", "npm:2.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["co", [\
       ["npm:4.6.0", {\
         "packageLocation": "./.yarn/cache/co-npm-4.6.0-03f2d1feb6-c0e85ea0ca.zip/node_modules/co/",\
@@ -9868,6 +9889,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:16.18.101"],\
           ["@types/react", "npm:18.3.3"],\
           ["@types/react-dom", "npm:18.3.0"],\
+          ["@types/validator", "npm:13.12.0"],\
           ["craco-alias", "npm:3.0.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:9.1.0"],\
@@ -9878,11 +9900,13 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.3.2"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:18.3.1"],\
-          ["react-hook-form", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:7.52.0"],\
           ["react-icons", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:5.2.1"],\
           ["react-router-dom", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:6.23.1"],\
           ["react-scripts", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:5.0.1"],\
+          ["react-spinners", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:0.13.8"],\
+          ["react-toastify", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:10.0.5"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
+          ["validator", "npm:13.12.0"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
@@ -17240,28 +17264,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["react-hook-form", [\
-      ["npm:7.52.0", {\
-        "packageLocation": "./.yarn/cache/react-hook-form-npm-7.52.0-55a59da4db-058bf5596f.zip/node_modules/react-hook-form/",\
-        "packageDependencies": [\
-          ["react-hook-form", "npm:7.52.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:7.52.0", {\
-        "packageLocation": "./.yarn/__virtual__/react-hook-form-virtual-89ae262b59/0/cache/react-hook-form-npm-7.52.0-55a59da4db-058bf5596f.zip/node_modules/react-hook-form/",\
-        "packageDependencies": [\
-          ["react-hook-form", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:7.52.0"],\
-          ["@types/react", "npm:18.3.3"],\
-          ["react", "npm:18.3.1"]\
-        ],\
-        "packagePeers": [\
-          "@types/react",\
-          "react"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["react-icons", [\
       ["npm:5.2.1", {\
         "packageLocation": "./.yarn/cache/react-icons-npm-5.2.1-e27cbb9ccf-9d52b975af.zip/node_modules/react-icons/",\
@@ -17440,6 +17442,59 @@ const RAW_RUNTIME_STATE =
           "eslint",\
           "react",\
           "typescript"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-spinners", [\
+      ["npm:0.13.8", {\
+        "packageLocation": "./.yarn/cache/react-spinners-npm-0.13.8-bf54f5b324-59a030ece2.zip/node_modules/react-spinners/",\
+        "packageDependencies": [\
+          ["react-spinners", "npm:0.13.8"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:0.13.8", {\
+        "packageLocation": "./.yarn/__virtual__/react-spinners-virtual-5a66d7058a/0/cache/react-spinners-npm-0.13.8-bf54f5b324-59a030ece2.zip/node_modules/react-spinners/",\
+        "packageDependencies": [\
+          ["react-spinners", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:0.13.8"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["@types/react-dom", "npm:18.3.0"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-toastify", [\
+      ["npm:10.0.5", {\
+        "packageLocation": "./.yarn/cache/react-toastify-npm-10.0.5-86b63c99fc-66c68ec3d6.zip/node_modules/react-toastify/",\
+        "packageDependencies": [\
+          ["react-toastify", "npm:10.0.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:10.0.5", {\
+        "packageLocation": "./.yarn/__virtual__/react-toastify-virtual-572123262f/0/cache/react-toastify-npm-10.0.5-86b63c99fc-66c68ec3d6.zip/node_modules/react-toastify/",\
+        "packageDependencies": [\
+          ["react-toastify", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:10.0.5"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["@types/react-dom", "npm:18.3.0"],\
+          ["clsx", "npm:2.1.1"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:82e44b0e475aacd0b353671636563ced6b3d5c3ffe6a880ca8fc3f2533924ee864cba653cd3df860664c9762f3a728d7ca742961a23975e80637daa2ec605b6f#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19712,6 +19767,15 @@ const RAW_RUNTIME_STATE =
           ["@types/istanbul-lib-coverage", "npm:2.0.6"],\
           ["convert-source-map", "npm:1.9.0"],\
           ["source-map", "npm:0.7.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["validator", [\
+      ["npm:13.12.0", {\
+        "packageLocation": "./.yarn/cache/validator-npm-13.12.0-6c8a423cbf-21d48a7947.zip/node_modules/validator/",\
+        "packageDependencies": [\
+          ["validator", "npm:13.12.0"]\
         ],\
         "linkType": "HARD"\
       }]\

@@ -8,17 +8,16 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <LayoutStyle>
-      {children}
+    <>
+      <LayoutStyle>{children}</LayoutStyle>
       <Navbar />
-    </LayoutStyle>
+    </>
   )
 }
 
 const LayoutStyle = styled.div`
   max-width: 600px;
   margin: 0 auto;
-  position: relative;
   min-height: 100vh;
 `
 export default Layout

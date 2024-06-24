@@ -1,12 +1,31 @@
 import { useNavigate } from 'react-router-dom'
 import { RiHome3Line } from 'react-icons/ri'
 import { CgProfile } from 'react-icons/cg'
-import { LuLogOut } from 'react-icons/lu'
+import { LuLogOut, LuLogIn } from 'react-icons/lu'
 import styled from '@emotion/styled'
 import { colors } from '@styles/colorPalette'
+import { signOut } from 'firebase/auth'
+import { auth } from '@remote/firebase'
+import { toast } from 'react-toastify'
+import { useContext } from 'react'
+import AuthContext from '@contexts/AuthContext'
 
 const Navbar = () => {
   const navigate = useNavigate()
+
+  const { user } = useContext(AuthContext)
+
+  const handleLogout = () => {
+    try {
+      signOut(auth).then(() => {
+        toast.success('로그아웃되었습니다.')
+        navigate('/login')
+      })
+    } catch (error: any) {
+      console.log(error)
+      toast.error(error.message)
+    }
+  }
   return (
     <FooterStyle>
       <GridStyle>
@@ -18,10 +37,17 @@ const Navbar = () => {
           <CgProfile />
           <span>PROFILE</span>
         </button>
-        <button type="button" onClick={() => navigate('/')}>
-          <LuLogOut />
-          <span>LOGOUT</span>
-        </button>
+        {user ? (
+          <button type="button" onClick={handleLogout}>
+            <LuLogOut />
+            <span>LOGOUT</span>
+          </button>
+        ) : (
+          <button type="button">
+            <LuLogIn />
+            <span>LOGIN</span>
+          </button>
+        )}
       </GridStyle>
     </FooterStyle>
   )
