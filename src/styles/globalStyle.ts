@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { colorPalette } from './colorPalette'
+import { colorPalette, colors } from './colorPalette'
 
 export default css`
   ${colorPalette}
@@ -113,7 +113,11 @@ export default css`
     display: block;
   }
   body {
-    line-height: 1;
+    margin: 0;
+    font-family: $font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: ${colors.gray900};
   }
   ol,
   ul {
@@ -148,5 +152,9 @@ export default css`
   a {
     color: inherit;
     text-decoration: inherit;
+    background-color: ${colors.white};
+  }
+  .hidden {
+    display: none;
   }
 `

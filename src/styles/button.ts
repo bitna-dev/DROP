@@ -3,11 +3,11 @@ import { colors } from './colorPalette'
 
 export const buttonColorMap = {
   primary: css`
-    background-color: ${colors.blue};
+    background-color: ${colors.green};
     color: ${colors.white};
   `,
   success: css`
-    background-color: ${colors.teal900};
+    background-color: ${colors.green};
     color: ${colors.white};
   `,
   error: css`
@@ -19,18 +19,15 @@ export const buttonColorMap = {
 export const buttonWeakMap = {
   primary: css`
     background-color: ${colors.white};
-    color: ${colors.blue};
-    border: 1px solid ${colors.blue};
+    color: ${colors.green};
   `,
   success: css`
     background-color: ${colors.white};
-    color: ${colors.teal900};
-    border: 1px solid ${colors.teal900};
+    color: ${colors.green};
   `,
   error: css`
     background-color: ${colors.white};
     color: ${colors.red};
-    border: 1px solid ${colors.red};
   `,
 }
 
